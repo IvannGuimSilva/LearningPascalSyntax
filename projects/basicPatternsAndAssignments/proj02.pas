@@ -1,4 +1,4 @@
-Program Programa02; // Cabeçalho  - Nome Programa.
+Program Programa02; // <-- Cabeçalho / Nome do nosso Programa.
 	{
 		Seção de definição e declaração
 		de dados / variáveis. É aqui que constantes e funções
@@ -22,7 +22,7 @@ Program Programa02; // Cabeçalho  - Nome Programa.
 				
 	
 Begin
-	{ Seção de comandos. }
+	{ Seção de comandos: }
 	
 	writeln(x1,a);
 	writeln(x2,b);
