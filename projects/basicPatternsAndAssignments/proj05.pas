@@ -1,15 +1,4 @@
-Program Programa04;
-
-	{ 
-		Constantes: A palavra reservada const marca 
-		o início da seção de definições de constantes, e deve
-		aparecer somente uma única vez dentro da seção de 
-		declarações e definições. 
-	       
-	  Ex:
-
-		const identifi1, identifi2, ... , identifiN = expressão ;
-	}
+Program Programa05;
 	
 	const identificador1: string = '******';
 				identificador2: boolean = false;
