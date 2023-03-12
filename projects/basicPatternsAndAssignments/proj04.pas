@@ -8,7 +8,7 @@ Program proj04;
 	       
 	  Ex:
 
-		const identifi1, identifi2, ... , identifiN = express�o ;
+		const identifi1, identifi2, ... , identifiN = expressão ;
 	}
 	
 	const identificador1: string = '******';
