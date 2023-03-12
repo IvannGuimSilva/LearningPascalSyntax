@@ -47,23 +47,23 @@ Program proj04;
 	// Forma mais simples de declarar arrays:
 	
 	const x1: array [0..2] of char = ('Q','W','E');
-				x2: array [1..3] of integer = (100,200,300);
-				x3: array [1..3] of string = ('Hello','Im','Ivan');
+		  x2: array [1..3] of integer = (100,200,300);
+		  x3: array [1..3] of string = ('Hello','Im','Ivan');
 				
 	// Arrays de mais de uma dimensão (Matrizes):
 	
 	const m1: array [1..3, 1..3] of integer = ((1,2,3),(4,5,6),(7,8,9));
 				
-				m2: array [1..2, 1..2] of integer = ((1,2),(3,4));
+		  m2: array [1..2, 1..2] of integer = ((1,2),(3,4));
 				
-				m3: array [1..2,   // An array with 2 indexes,
-						   1..2,   // Each one of them has 2 indexes themselves,
-						   1..3]   // and these two have 3 numbers within them:
+		  m3: array [1..2,  // An array with 2 indexes,
+					 1..2,  // Each one of them has 2 indexes themselves,
+					 1..3]  // and these two have 3 numbers within them:
 									 
-								   of integer = (
-								   		((1,2,3),(4,5,6)),
-								   		((7,6,5),(4,3,2))
-								   );
+							of integer = (
+								((1,2,3),(4,5,6)),
+								((7,6,5),(4,3,2))
+							);
 	
 	
 Begin
