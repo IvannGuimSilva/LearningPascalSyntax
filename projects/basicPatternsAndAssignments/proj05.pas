@@ -1,67 +1,71 @@
-Program Programa05;
+Program proj05;
 	
-	const identificador1: string = '******';
-				identificador2: boolean = false;
-				identificador3: char = 'M';
+	// Registros sÃ£o a coisa mais prÃ³xima de **Object Literals**
+	// do Javascript dentro do Pascal: 
+	
+	// Registro Teste:
+	
+	
+	type r1 = record 
+		 prop1, prop2: integer; 
+		 End;
+			 
+	const instancia_r1: r1 = (prop1: 3344; prop2: 4433);	 
+			 
+			 
+	type r2 = array[1..2] of record propRcrdIdx1, 
+	                                propRcrdIdx2: integer; 
+									End;
 				
-	// Valores de constantes podem tbm ser IMPLICITAMENTE definidos
-	// pelos valores que recebem:
+	const	instancia_r2: r2 = (
+		(
+		 propRcrdIdx1: 77; 
+		 propRcrdIdx2: 66
+		),
+		(
+		 propRcrdIdx1: 99;
+		 propRcrdIdx2: 88
+		)
+	);
+		 	
+			 	
+	// Registro Cachorro:
 	
-	const nome = 'Ivan';
-				gostaDeGatos = false;
-				sx = 'M';
-				
-	// Mais exemplos de constantes explicitamente tipadas:
 	
-	const nmCao: string = 'Duke';
-				sexo: char = 'M';
-				raca: boolean = false;
-				pesoKg: real = 15.50;
-				idade: integer = 17;
-				
-	// A expressão const pode ser usada p/ inicializar um
-	// Vetor, os elementos do vetor devem aparecer DENTRO DE UM PAR
-	// de parênteses, e devem estar separados por vírgula:
-	//
-	// Assim: ( valor1, valor2 )
+	type dogRecord = record 
+	     name, sex: string;
+	     age: integer;
+	     weight: real;
+	     hasBreed: boolean; End;
+			 
 	
-	const list1: array [1..3] of integer = (23, 95, 140);
-	
-	const list2: array [1..5] of char = ('A','B','C','D','E');
-	
-	const list3: array [1..3] of boolean = (true, false, true);
-	
-	const list4: array [1..5] of string = ('xxx','yyy','zzz','www','ooo');
-	
-	// Forma mais simples de declarar arrays:
-	
-	const x1: array [1..3] of char = ('Q','W','E');
-				x2: array [1..3] of integer = (100,200,300);
-				x3: array [1..3] of string = ('Hello','Im','Ivan');
-				
-	// Arrays de mais de uma dimensão (Matrizes):
-	
-	const m1: array [1..3, 1..3] of integer = ((1,2,3),(4,5,6),(7,8,9));
-				
-				m2: array [1..2, 1..2] of integer = ((1,2),(3,4));
-				
-				m3: array [1..2, 
-									 1..2, 
-									 1..3] 
-													of integer = (
-														((1,2,3),(4,5,6)),
-														((7,6,5),(4,3,2))
-													);
-	
+	const cao1: dogRecord = (
+		name: 'Duke'; sex: 'Male';
+		age: 17; 
+		weight: 15.5;
+		hasBreed: false
+	);
 	
 Begin
-	writeln(identificador1);
-	writeln(identificador2);
-	writeln(identificador3);
-	writeln('');
-	writeln(nome);
-	writeln(gostaDeGatos);
-	writeln(sx);
-	writeln('');
-	// writeln(list1); // PASCAL NÃO CONSEGUE MOSTRAR ARRAY INTEIRO :D
+   writeln('//// Dados Registro 01: '); writeln('');
+   writeln(instancia_r1.prop1);
+   writeln(instancia_r1.prop2);
+   writeln('');
+   
+   writeln('//// Dados Registro 02: '); writeln('');
+   writeln('** Dados Registro 02 - Index[1]: ');
+   writeln(instancia_r2[1].propRcrdIdx1);
+   writeln(instancia_r2[1].propRcrdIdx2);
+   writeln('');
+   writeln('** Dados Registro 02 - Index[2]: ');
+   writeln(instancia_r2[2].propRcrdIdx1);
+   writeln(instancia_r2[2].propRcrdIdx2);
+   writeln('');
+   
+   writeln('//// Dados Registro Cachorro: '); writeln('');
+   writeln(cao1.name);
+   writeln(cao1.sex);
+   writeln(cao1.age);
+   writeln(cao1.weight);
+   writeln(cao1.hasBreed);
 End.

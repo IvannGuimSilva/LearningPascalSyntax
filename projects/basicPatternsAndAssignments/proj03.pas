@@ -1,22 +1,24 @@
-Program Programa03;
+Program proj03;
 
-	// Nomes v·lidos p/ vari·veis - constantes - func. em Pascal:
+	// Nomes v√°lidos p/ vari√°veis - constantes - func. em Pascal:
 	
 	var nomii: string = 'abc';
-			NOMEE: string = 'abc'; // Aviso: Pascal N√O SABE diferenciar
-	                       		 // letras mai˙sculas de min˙sculas!!!
+		NOMEE: string = 'abc'; // Aviso: Pascal N√ÉO SABE diferenciar
+	                       		 // letras mai√∫sculas de min√∫sculas!!!
 	                       		 // logo: nome = NOME = Nome
 
-  // Nomes INV¡LIDOS:
+
+  // Nomes INV√ÅLIDOS em Pascal:
   
-  { Qualquer um com car·ctere especial ou n˙mero antes
+  { 
+	Qualquer um com car√©ctere especial ou n√∫mero antes
   	da letra...
-	}
+  }
 	
-	// Constantes predefinidas:
+  // Constantes predefinidas:
 	
-	const meuPi: real = pi;
-				biggestIntPossible: integer = maxint;
+  const meuPi: real = pi;
+		biggestIntPossible: integer = maxint;
 
 Begin
 	writeln(meuPi);

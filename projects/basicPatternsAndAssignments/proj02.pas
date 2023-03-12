@@ -1,28 +1,28 @@
-Program Programa02; // <-- Cabeçalho / Nome do nosso Programa.
+Program proj02; // <-- CabeÃ§alho / Nome do nosso Programa.
 	{
-		Seção de definição e declaração
-		de dados / variáveis. É aqui que constantes e funções
-		também ficam, já que a seção de execução de comandos (begin - end)
-		impede a criação de funções em qualquer escopo.
+		SeÃ§Ã£o de definÃ§Ã£o e declaraÃ§Ã£o
+		de dados / variÃ¡veis. Ã‰ aqui que constantes e funÃ§Ãµes
+		tambÃ©m ficam, jÃ¡ que a seÃ§Ã£o de execuÃ§Ã£o de comandos (begin - end)
+		impede a criaÃ§Ã£o de funÃ§Ãµes em qualquer escopo.
 	}
 	
 	var x1: string = 'Ivan';
-			x2: char = 'M';
-			x3: boolean = false;
-			x4: real = 233.56;
-			x5: integer = 23;
+		x2: char = 'M';
+		x3: boolean = false;
+		x4: real = 233.56;
+		x5: integer = 23;
 	
 	
 	const a: integer = 26;
-				b: string = 'Ivan';
-				c: boolean = true;
-				d: real = 3.141592;
-				e: string = 'Pascalzim';
-				f: real = pi;
+		  b: string = 'Ivan';
+		  c: boolean = true;
+		  d: real = 3.141592;
+		  e: string = 'Pascalzim';
+		  f: real = pi;
 				
 	
 Begin
-	{ Seção de comandos: }
+	{ SeÃ§Ã£o de comandos: }
 	
 	writeln(x1,a);
 	writeln(x2,b);
@@ -30,6 +30,6 @@ Begin
 	writeln(x4,d);
 	writeln(x5,e);
 	writeln(f);
-	write('[ Espaço QUE N-Ã-O quebra a linha ]');
-	write(' Isso é uma frase escrite que NÃO separa linha! ');
+	write('[ EspaÃ§o QUE N-Ãƒ-O quebra a linha ]');
+	write(' Isso Ã© uma frase escrita que NÃƒO separa linha! ');
 End.
