@@ -1,2 +1,4 @@
 /projects/**/*.exe
 /projects/**/*.o
+/projects/**/**/*.exe
+/projects/**/**/*.o
